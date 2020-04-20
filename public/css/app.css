@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(48deg, #EECFBA, #C5DDE8);
+}
+
+#shortener_wrpper {
+    padding: 10px;
+}
+
+.btn {
+    border: 2px solid rgba(50, 50, 50, 0.10);
+    border-radius: 10px;
+    color: #f4feff;
+    background: rgba(50, 50, 50, 0.35);
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    border-color: rgba(50, 50, 50, 0.20) !important;
+    color: #adfaff !important;
+    background-color: rgba(50, 50, 50, 0.45) !important;
+}
+
+[type='url']::placeholder {
+    color: #777;
+}
+
+#shortener_form {
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgba(90, 90, 90, 0.20);
+    border: 1px solid rgba(65, 65, 65, 0.20);
+    text-align: center;
+}
+
+#shortener_form-url {
+    width: 95%;
+}
+
+#shortUrl {
+    width: 50%;
+}

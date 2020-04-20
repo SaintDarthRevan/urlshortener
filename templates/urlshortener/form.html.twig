@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id="shortener_form" class="mx-auto">
+        <form method="POST">
+            {% if short_url == null %}
+                <input type="url" name="url" required id="shortener_form-url" placeholder="Введите URL" class="form-control mx-auto" />
+                <br />
+                <input type="submit" name="submit" value="Сгенерировать сокращенную ссылку" class="btn btn-light button" />
+            {% else %}
+                <input type="url" name="url" id="shortUrl" value="{{ short_url }}" class="form-control mx-auto" />
+                <br />
+                <input type="button" id="copyHashBtn" value="Скопировать" class="button" onclick="javascript:copyHash();" />
+            {% endif %}
+
+        </form>
+    </div>
+{% endblock %}
